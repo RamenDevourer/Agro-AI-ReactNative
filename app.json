@@ -15,7 +15,13 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ramen_devourer.agroAIFrt",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "compileSdkVersion": 35
     },
     "web": {
       "bundler": "metro",
@@ -32,10 +38,17 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "packagerOpts": {
+      "assetExts": [
+        "tflite",
+        "txt"
+      ]
     }
   }
 }
